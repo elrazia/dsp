@@ -46,13 +46,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I installed python 2. Most of the code out there is written in 2. It's going to take a few years for people to start using 3. It's better to learn 2 and the changes associated with 3 than learn 3 and be stuck when I encounter python 2 code.
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+In the command line, type "python -V" to get the version of python and of anaconda that is installed.
 
  
 
