@@ -59,7 +59,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I will use vim as my terminal editor. I chose it because of the available tutorial, and because above it was mentioned that vim is the "default on many systems."
 
 --
 
@@ -67,6 +67,8 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I will use Sublime as my graphical editor. It was an easy decision, as I've been using Sublime since I started learning Python a little over a year and a half ago.
+One of my favorite features is multi-edit, where you can select multiple instances of a word and edit them at the same time. Another great feature is the ability to use Git commands within Sublime. You can pull them up using the command palette feature and greatly increase your efficiency the more proficient you become. Cmd+d (on Mac) can highlight the current word, and the next few instances of a word to toggle multi-edit. Cmd+shift+p opens the command palette, where you can install packages to customize your sublime experience, or select Git commands to streamline your workflow.
+I'm not sure if this question is asking how one would customize Sublime, or how I personally do it. The biggest way to customize your Sublime experience is to take advantage of the packages that have been created by the Sublime community. Personally, I have installed the Git and Emmet packages, for version-control and web development, respectively. Another way I have customized my Sublime editor is to create a symlink between the command line and Sublime, so that I can open the editor by typing 'subl' into the terminal.
 
  
