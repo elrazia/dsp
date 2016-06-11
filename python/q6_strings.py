@@ -18,7 +18,9 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count<10:
+        return 'Number of donuts: %d' %(count)
+    return 'Number of donuts: many'
 
 
 def both_ends(s):
@@ -37,7 +39,11 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    # edge case check
+    if len(s)<2:
+        return ''
+    # rest of function
+    return s[:2]+s[-2:]
 
 
 def fix_start(s):
@@ -56,7 +62,13 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    new_s = str(s[0])
+    for letter in s[1:]:
+        if letter == s[0]:
+            new_s += '*'
+        else:
+            new_s += letter
+    return new_s
 
 
 def mix_up(a, b):
@@ -74,7 +86,7 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    return b[:2]+a[2:]+' '+a[:2]+b[2:]
 
 
 def verbing(s):
@@ -91,7 +103,14 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    # edge case check
+    if len(s)<3:
+        return s
+    # rest of function
+    if s[-3:] != 'ing':
+        return s + 'ing'
+    else:
+        return s + 'ly'
 
 
 def not_bad(s):
@@ -111,7 +130,13 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    # get indices of keywords
+    not_ind = s.find('not')
+    bad_ind = s.find('bad')
+    # rest of function
+    if bad_ind>not_ind:
+        return s[:not_ind] + 'good' + s[bad_ind+3:]
+    return s
 
 
 def front_back(a, b):
@@ -130,4 +155,7 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    front_a = (len(a)/2) + (len(a)%2)
+    front_b = (len(b)/2) + (len(b)%2)
+    
+    return a[:front_a] + b[:front_b] + a[front_a:] + b[front_b:]
