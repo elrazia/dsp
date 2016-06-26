@@ -70,14 +70,32 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+```
+P(T) = Probability of twin brothers
+P(I) = Probability of identical twins
+P(F) = Probability of fraternal twins
+P(I|T) = ?
 
+P(T|F) = Probability of twin brothers given that twins are fraternal = (1/2)*(1/2) (first baby boy AND second baby boy***)
+P(T|I) = Probability of twin brothers given that twins are identical = (1/2) (can either be both boys or both girls***)
+P(F) = (1/125)
+P(I) = (1/300)
+
+Bayes: P(I|T) = P(T|I)P(I) / P(T)
+P(T) via law of total probability = P(T|I)P(I)+P(T|F)P(F)
+
+Full Formula:
+(1/2)*(1/300) / (1/2)*(1/300) + (1/4)*(1/125)
+= 5/11 = 45.5% chance that elvis was an identical twin given that he was a twin brother
+
+***Assume that boys and girls are equally likely to be born
+```
 ---
 
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Frequentist statistics use sampling to try and estimate the fixed parameters of a population. Bayesian statistics approach parameters and other unknowns probabilistically. Frequentist statistics treat samples as isolated snapshots of a population, whereas Bayesian statistics incorporate prior information with sample information to update probabilities. Repeated samples from a Bayesian standpoint continue to update probabilities and get you closer to the truth. Bayesian statistics attempts to describe the probability of a phenomenon occurring, by continually updating the probability based on prior and new information. Frequentist statistics try and determine whether the phenomenon occurs or it doesn't, by sampling until it can be said with a degree of certainty if the phenomenon occurs.
 
 ---
 
